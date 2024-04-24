@@ -112,11 +112,19 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
-
+    let multiplicar = 1;
+    for (let i = 0; i < multArr.length; i++) {
+        multiplicar = multiply(multiplicar, multArr[i])[0];
+    }
+    const numeros = multArr.join(',');
+    const message = 'The numbers ' + numeros + ' have a product of ' + multiplicar + '.';
+    return [multiplicar, message];
 }
 
+multiplyArray([2, 3, 4]);
+
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
