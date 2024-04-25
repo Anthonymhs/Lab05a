@@ -157,7 +157,6 @@ function multiplyAnyArray(dynamicArray) { //eslint-disable-line
         return [product, message];
     }
 
-// Prueba manualmente la función con testDynamicArray
 multiplyAnyArray(testDynamicArray);
 
 // Here is the test for multiplyArray(); uncomment it to run it
